@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPTI</title>
+    <style>
+        @font-face {
+            font-family: "Futura-LT-W01-Book";
+            src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/8bf38806-3423-4080-b38f-d08542f7e4ac.woff2") format("woff2"),
+                url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/e2b9cbeb-fa8e-41cd-8a6a-46044b29ba52.woff") format("woff");
+            font-display: block;
+        }
+
+        @font-face {
+            font-family: "Futura-LT-W05-Book";
+            src: url("//static.parastorage.com/services/santa-resources/resources/viewer/user-site-fonts/fonts/Futura_Complete/v1/FuturaLTW05-Book.woff2") format("woff2");
+            font-display: block;
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: wf_9a8bd484dc534b7b9d2ae41bf;
+            src: url("https://static.wixstatic.com/ufonts/b0f925_9a8bd484dc534b7b9d2ae41bf8d38e76/woff2/file.woff2") format("woff2"),
+                url("https://static.wixstatic.com/ufonts/b0f925_9a8bd484dc534b7b9d2ae41bf8d38e76/woff/file.woff") format("woff"),
+                url("https://static.wixstatic.com/ufonts/b0f925_9a8bd484dc534b7b9d2ae41bf8d38e76/ttf/file.ttf") format("ttf");
+        }
+
+        @font-face {
+            font-family: "Futura-LT-W01-Light";
+            src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/26091050-06ef-4fd5-b199-21b27c0ed85e.woff2") format("woff2"),
+                url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/cca525a8-ad89-43ae-aced-bcb49fb271dc.woff") format("woff");
+            font-display: block;
+        }
+
+        @font-face {
+            font-family: "Futura-LT-W05-Light";
+            src: url("//static.parastorage.com/services/santa-resources/resources/viewer/user-site-fonts/fonts/Futura_Complete/v1/FuturaLTW05-LightCondensed.woff2") format("woff2"),
+                url("//static.parastorage.com/services/santa-resources/resources/viewer/user-site-fonts/fonts/Futura_Complete/v1/FuturaLTW05-LightCondensed.woff") format("woff");
+            font-display: block;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            font-family: Futura-LT-W01-Book;
+        }
+
+        .text-title {
+            font-family: wf_9a8bd484dc534b7b9d2ae41bf;
+            font-size: 64px;
+            color: #55a333;
+        }
+
+        .text-paragraph {
+            color: #414141;
+            font-size: 18px;
+            margin: 20px 0;
+        }
+
+        .button {
+            color: #ffffff;
+            background-color: #55a333;
+            border: 2px solid #55a333;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+            padding: 5px 0;
+            font-weight: bolder;
+            transition: background-color 0.5s ease, color 0.3s ease;
+
+        }
+
+        .button:hover {
+            background-color: #323232;
+        }
+
+        .gif {
+            max-width: 600px;
+        }
+
+        @media (max-width: 1120px) {
+            .container {
+                flex-direction: column-reverse;
+            }
+        }
+
+        @media (max-width: 590px) {
+            .gif {
+                max-width: 300px;
+            }
+
+            .container {
+                flex-direction: column-reverse;
+                justify-content: start;
+            }
+
+            .text-title {
+                font-size: 32px;
+            }
+
+            .text-paragraph {
+                font-size: 14px;
+            }
+            .text-paragraph br {
+                display: none;
+            }
+        }
+        @media (max-width: 300px) {
+            .gif {
+                max-width: 270px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="text-container">
+            <div class="text-title">
+                Nossa <br>
+                instituição está <br>
+                de cara nova!</div>
+            <div class="text-paragraph">
+                Isso mesmo, o IPTI mudou de nome agora é THP e para fazer jus <br>
+                ao nosso novo nome e visual, nada melhor do que um novo site <br>
+                com melhorias e praticidade para você que nos acompanha.
+            </div>
+            <a class="button" href="https://www.thehumanproject.org.br/" target="_blank">Clique aqui e confira
+            </a>
+        </div>
+        <div class="gif-contianer">
+            <img class="gif" src="./assets/gif.gif" alt="git IPTI">
+        </div>
+    </div>
+</body>
+
+</html>
